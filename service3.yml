@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-service
+  labels:
+    author: vidya
+spec:
+  ports:
+    - targetPort: 3306
+      port: 3306
+  selector:
+    author: vidya
+    type: db
+...
